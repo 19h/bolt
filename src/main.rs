@@ -21,6 +21,9 @@ extern crate regex;
 extern crate time;
 extern crate url;
 
+pub mod version;
+pub mod status;
+
 fn main() {
     println!("Hello, world! This is Bolt ϟ!");
 }
