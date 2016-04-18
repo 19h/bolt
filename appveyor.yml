@@ -1,0 +1,43 @@
+version: 1.0.{build}
+
+branches:
+  only:
+  - master
+  - developing
+
+platform:
+- x86
+- x64
+
+notifications:
+- provider: Webhook
+  url: https://webhooks.gitter.im/e/e378d4ea8df5e6e92c2b
+  method: POST
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: true
+
+install:
+  - if "%PLATFORM%" == "x86" set RUST_INSTALL=i686-pc-windows-msvc
+  - if "%PLATFORM%" == "x64" set RUST_INSTALL=x86_64-pc-windows-msvc
+  - set OPENSSL_INSTALL=openssl-1.0.1s-vs2015
+  - appveyor DownloadFile "https://static.rust-lang.org/dist/rust-nightly-%RUST_INSTALL%.exe" -FileName rust-install.exe
+  - rust-install.exe /VERYSILENT /NORESTART /DIR="C:\Rust\"
+  - SET PATH=%PATH%;C:\Rust\bin
+  - appveyor AddMessage -Category Information "Rust Platform = %RUST_INSTALL%"
+  - appveyor AddMessage -Category Information "OpenSSL Platform = %OPENSSL_INSTALL%"
+  - rustc -V
+  - cargo -V
+  - appveyor DownloadFile http://www.npcglib.org/~stathis/downloads/%OPENSSL_INSTALL%.7z -FileName openssl.7z
+  - mkdir C:\openssl
+  - 7z x openssl.7z -oC:/openssl/ -y > nul
+  - set DEP_OPENSSL_INCLUDE=C:\openssl\%OPENSSL_INSTALL%\include\
+  - if "%PLATFORM%" == "x64" set OPENSSL_EXT=64
+  - cp C:\openssl\%OPENSSL_INSTALL%\lib%OPENSSL_EXT%\libeay32MD.lib C:\Rust\lib\rustlib\%RUST_INSTALL%\lib\eay32.lib
+  - cp C:/openssl/%OPENSSL_INSTALL%/lib%OPENSSL_EXT%\ssleay32MD.lib C:\Rust\lib\rustlib\%RUST_INSTALL%\lib\ssl32.lib
+
+build: none
+
+test_script:
+  - cargo build
+  - cargo test --verbose

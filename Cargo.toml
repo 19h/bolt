@@ -1,0 +1,19 @@
+[package]
+name          = "bolt"
+version       = "0.1.0"
+authors       = ["lenovouser <lenovouser@minora.io>"]
+readme        = "readme.md"
+license       = "MIT and Apache 2"
+homepage      = "https://minora.io/oss/bolt/"
+repository    = "https://github.com/minora-oss/bolt/"
+documentation = "https://minora.io/wiki/bolt/"
+description   = "Bolt ϟ - a high performance web server written in Rust"
+keywords      = ["bolt", "http", "http2", "quic", "spdy", "https", "webserver", "server", "proxy"]
+
+[dependencies]
+log     = "0.3"
+mime    = "0.2"
+openssl = "0.7"
+regex   = "0.1"
+time    = "0.1"
+url     = "0.5"
