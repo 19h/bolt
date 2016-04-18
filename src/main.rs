@@ -13,6 +13,14 @@
 // You should have received a copy of all licenses along with Bolt ϟ.
 // If not, see <https://github.com/minora-oss/blob/master/licenses/>.
 
+extern crate cookie;
+extern crate log;
+extern crate mime;
+extern crate openssl;
+extern crate regex;
+extern crate time;
+extern crate url;
+
 fn main() {
     println!("Hello, world! This is Bolt ϟ!");
 }
