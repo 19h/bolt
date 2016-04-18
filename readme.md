@@ -26,4 +26,4 @@ Interested in contributing to Bolt ϟ? Contributions are welcome, and are accept
 
 ### License
 
-Code dual licensed under the [MIT](https://github.com/minora-oss/bolt/blob/master/license/mit.md) and the [Apache 2](https://github.com/minora-oss/bolt/blob/master/license.md) license, documentation under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
+Code dual licensed under the [MIT](https://github.com/minora-oss/bolt/blob/master/license/mit.md) and the [Apache 2](https://github.com/minora-oss/bolt/blob/master/apache.md) license, documentation under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).

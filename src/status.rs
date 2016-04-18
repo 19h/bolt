@@ -11,7 +11,7 @@
 // See your chosen license for more details.
 //
 // You should have received a copy of all licenses along with Bolt ϟ.
-// If not, see <https://github.com/minora-oss/blob/master/licenses/>.
+// If not, see <https://github.com/minora-oss/bolt/blob/master/license/>.
 
 use std::fmt;
 use std::cmp::Ordering;
