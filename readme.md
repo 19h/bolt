@@ -2,7 +2,7 @@
 
 [![Chat](https://img.shields.io/gitter/room/minora-oss/bolt.svg?style=flat-square)](https://gitter.im/minora-oss/bolt)
 [![Travis CI](https://img.shields.io/travis/minora-oss/bolt.svg?style=flat-square)](https://travis-ci.org/minora-oss/bolt)
-[![AppVeyor CI](https://img.shields.io/appveyor/ci/minora-oss/bolt.svg?style=flat-square)](https://ci.appveyor.com/project/minora-oss/bolt)
+[![AppVeyor CI](https://img.shields.io/appveyor/ci/MinoraNetwork/bolt.svg?style=flat-square)](https://ci.appveyor.com/project/MinoraNetwork/bolt)
 
 Bolt ϟ is a high performance web server written in Rust. It supports **[HTTP](https://wikipedia.org/wiki/HTTP)**, **[SPDY](https://wikipedia.org/wiki/SPDY)** and **[QUIC](https://wikipedia.org/wiki/QUIC)**.
 
