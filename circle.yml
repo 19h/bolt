@@ -3,10 +3,6 @@ dependencies:
     - sudo apt-get update
     - curl -sSf https://static.rust-lang.org/rustup.sh | sh
 
-  cache_directories:
-    - target/debug/deps
-    - target/debug/build
-
 test:
   pre:
     - rustc -V
