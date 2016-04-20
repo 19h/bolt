@@ -13,21 +13,4 @@
 // You should have received a copy of all licenses along with Bolt ϟ.
 // If not, see <https://github.com/minora-oss/bolt/blob/master/license/>.
 
-extern crate cookie;
-extern crate log;
-extern crate mime;
-extern crate openssl;
-extern crate regex;
-extern crate time;
-extern crate url;
-
-pub mod version;
-pub mod status;
-
-pub mod http;
-pub mod quic;
-pub mod spdy;
-
-fn main() {
-    println!("Hello, world! This is Bolt ϟ!");
-}
+use std::net::UdpSocket;
