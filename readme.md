@@ -1,4 +1,4 @@
-# [![Bolt ϟ Logo](https://img.minora.io/banner/git/bolt.png)]
+# ![Bolt ϟ Logo](https://img.minora.io/banner/git/bolt.png)
 
 [![Chat](https://img.shields.io/gitter/room/minora-oss/bolt.svg?style=flat-square)](https://gitter.im/minora-oss/bolt)
 [![Travis CI](https://img.shields.io/travis/minora-oss/bolt.svg?style=flat-square)](https://travis-ci.org/minora-oss/bolt)
