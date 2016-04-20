@@ -1,0 +1,13 @@
+before_install:
+  - sudo apt-get update
+
+install:
+  - curl -sSf https://static.rust-lang.org/rustup.sh | sh
+
+before_script:
+  - rustc -V
+  - cargo -V
+
+script:
+  - cargo test
+  - cargo build

@@ -1,0 +1,16 @@
+dependencies:
+  pre:
+    - sudo apt-get update
+    - curl -sSf https://static.rust-lang.org/rustup.sh | sh
+
+  cache_directories:
+    - target/debug/deps
+    - target/debug/build
+
+test:
+  pre:
+    - rustc -V
+    - cargo -V
+  override:
+    - cargo test
+    - cargo build

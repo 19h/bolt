@@ -1,0 +1,24 @@
+image: schickling/rust:latest
+
+cache:
+  paths:
+  - target/debug/deps
+  - target/debug/build
+
+before_script:
+  - rustc -V
+  - cargo -V
+
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  script:
+  - cargo test
+
+build:
+  stage: build
+  script:
+  - cargo build
