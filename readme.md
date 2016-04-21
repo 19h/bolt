@@ -27,7 +27,7 @@ While Travis CI is our main test platform, Bolt ϟ is being tested on several di
 | [AppVeyor CI:](https://ci.appveyor.com/project/lenovouser/bolt) | [![AppVeyor CI](https://img.shields.io/appveyor/ci/lenovouser/bolt.svg)](https://ci.appveyor.com/project/lenovouser/bolt)                    |
 |       [Circle CI:](https://circleci.com/gh/minora-oss/bolt)     | [![Circle CI](https://img.shields.io/circleci/project/minora-oss/bolt.svg)](https://circleci.com/gh/minora-oss/bolt)                         |
 |         [Magnum CI:](https://magnum-ci.com/projects/4187)       | [![Magnum CI](https://img.shields.io/magnumci/ci/c6dd8ceebb561b440c80cb9b5a565bae.svg)](https://magnum-ci.com/projects/4187)                 |
-|     [Semaphore CI:](https://semaphoreci.com/lenovouser/bolt)    | [![Semaphore CI](https://semaphoreci.com/api/v1/lenovouser/bolt/branches/master/shields_badge.svg)](https://semaphoreci.com/lenovouser/bolt) |
+|     [Semaphore CI:](https://semaphoreci.com/minora-oss/bolt)    | [![Semaphore CI](https://semaphoreci.com/api/v1/minora-oss/bolt/branches/master/shields_badge.svg)](https://semaphoreci.com/minora-oss/bolt) |
 
 
 
