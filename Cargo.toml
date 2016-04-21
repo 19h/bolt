@@ -8,7 +8,7 @@ homepage      = "https://minora.io/oss/bolt/"
 repository    = "https://github.com/minora-oss/bolt/"
 documentation = "https://minora.io/wiki/bolt/"
 description   = "Bolt ϟ - a high performance web server written in Rust"
-keywords      = ["bolt", "http", "http2", "quic", "spdy", "https", "webserver", "server", "proxy"]
+keywords      = ["bolt", "http", "quic", "spdy", "server"]
 
 [dependencies]
 cookie  = "0.2"
