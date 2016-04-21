@@ -1,6 +1,6 @@
 [package]
-name          = "bolt"
-version       = "0.1.0"
+name          = "bolt-server"
+version       = "0.0.1"
 authors       = ["lenovouser <lenovouser@minora.io>"]
 readme        = "readme.md"
 license       = "MIT/Apache-2.0"
